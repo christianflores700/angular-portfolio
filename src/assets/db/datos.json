@@ -1,0 +1,39 @@
+{
+    "nombre":"Christian",
+    "apellido":"Flores Cristaldo",
+    "edad":29,
+
+    "estudios":[
+        {
+            "id":1,
+            "titulo":"Bachiller en Cs. sociales",
+            "institucion":"IaRo.",
+            "inicio":"03/2006",
+            "fin":"12/2012",
+            "descripcion":"La red de Educación Adventista forma parte de la Iglesia Adventista del Séptimo día y está presente en 165 países, con casi 2 millones de alumnos. En Sudamérica cuenta con 900 instituciones educativas en todos los niveles, 320 mil alumnos matriculados y 20 mil docentes.",
+            "imagen":"../assets/img/logo-ea.svg"
+
+
+        },
+        {
+            "id":2,
+            "titulo":"Fotografia",
+            "institucion":"Mucha Escuela",
+            "inicio":"03/2014",
+            "fin":"12/2014",
+            "descripcion":"Mucha Escuela® es un colectivo multidisciplinario donde diferentes áreas conviven y se entremezclan con un denominador común: la CREATIVIDAD.",
+            "imagen":"../assets/img/logo_mucha_escuela_blanco.png"
+        },
+        {
+            "id":3,
+            "titulo":"SeProgramar",
+            "institucion":"Argentina Programa",
+            "inicio":"03/2022",
+            "fin":"06/2022",
+            "descripcion":"#SéProgramar es un curso introductorio en el que se aprende los fundamentos básicos de la programación para dar los primeros pasos en el mundo tecnológico. ",
+            "imagen":"assets/img/argentina_programa_png.png"
+
+
+        }
+    ]
+}

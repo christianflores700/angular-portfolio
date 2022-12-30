@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/argentina_programa_png.png" alt="logo argentina programa" width="180" height="100">
+      </a>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item"> 
+          <a href="http://www.linkedin.com/in/christian-flores-cristaldo/" target="_blank"><i class="fab fa-linkedin fa-2x text-white" ></i></a>
+        </li>
+        <li class="list-group-item"><a href="https://www.instagram.com/christianflores.ok/" target="_blank"><i class="fab fa-instagram fa-2x text-white"></i> </a>
+        </li>
+        <li class="list-group-item"><a href="https://github.com/christianflores700" target="_blank"><i class="fab fa-github fa-2x text-white"> </i></a>
+        </li>
+        <li class="list-group-item">   
+          <!-- Boton que envia al login -->
+           <a href="login.html"> <i class="fas fa-user-lock fa-2x text-white"></i></a>
+        
+        </li>
+      </ul>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         
+       </button>
+    </div>
+  </nav>
+  <!-- ESTRUCTURA DE LOGIN -->
+  <form [formGroup]="form"  (ngSubmit)="funciondelogin($event)">    
+    <div>
+        <label for="email">Email: </label>                          
+        <input type="email" formControlName="email" [class.border-succes]="MailValid">
+    </div>
+    <!-- Gracias al getter que configuramos en el controlador -->
+    <div *ngIf="Mail?.errors  && Mail?.touched">    
+        <p *ngIf="Mail?.hasError('required')" class="error">
+            El email es requerido.
+        </p>
+        <p *ngIf="Mail?.hasError('email')" class="error">
+            El formato del email debe ser válido.
+          </p>
+    </div>
+
+    <br/>
+    <div>
+        <label for="exampleInputPassword1" class="form-label">Password: </label>
+        <input type="password" formControlName="password" [class.border-succes]="PasswordValid">
+    </div>
+    <!-- Gracias al getter que configuramos en el controlador -->
+    <div *ngIf="Password?.errors  && Password?.touched">
+    <p *ngIf="Password?.hasError('required')" class="error">
+      El password es requerido.
+    </p>
+    <p *ngIf="Password?.errors?.['minLength']" class="error">
+      El password debe ser de 8 o más caracteres.
+    </p>
+  </div>
+    <br/>
+    <div>
+        <button   type="submit">Iniciar Sesión</button>
+    </div>
+</form>

@@ -1,0 +1,111 @@
+.list-group-item {
+    background-color:black;
+}
+
+.fab.fa-linkedin.fa-2x:hover {
+    --bs-text-opacity: 1;
+    color: rgb(53, 88, 177)!important
+}
+
+.fab.fa-instagram.fa-2x:hover {
+    --bs-text-opacity: 1;
+    color: rgb(189, 72, 160)!important;
+
+}
+.fab.fa-github.fa-2x:hover {
+    --bs-text-opacity: 1;
+    color: rgba(252, 250, 249, 0.776)!important
+}
+.fas.fa-user-lock.fa-2x:hover {
+    --bs-text-opacity: 1;
+    color: rgba(252, 250, 249, 0.776)!important
+}
+section.banner{
+    background-image:linear-gradient(
+        rgba(0,0,0,0.95),
+        rgba(0,0,0,0.3)
+    ), url(assets/img/codigo_vsc.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+h3.intro{
+    font-size: 4rem;
+    padding-top: 5%;
+    text-shadow: 1px 1px 10px  rgb(255, 255, 255, 1);
+}
+p, cite .formacion{
+    font-size: 1rem;
+    padding-top: 5%;
+    text-shadow: 1px 1px 10px  rgb(255, 255, 255, 1);
+    text-align: right;
+   margin-right: 2rem;  
+}
+.acerca_de,  .hard .error .formacion {
+    background-image:linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.4)
+    ), url(./assets/img/fondo.png);
+}
+.acerca_de, .experiencia, .hard, .formacion{ 
+    font-size: 1rem;
+    padding-top: 1%;
+    text-shadow: 1px 1px 10px  rgb(255, 255, 255, 1);
+   
+}
+p,i{
+    text-align: center;
+    padding-top: 1rem;
+    font-size:medium;
+}
+h5,p{
+    font-size:xx-large;
+}
+.hard{
+    width: 100%;
+    height: 3rem;
+    padding-top: 3 rem;
+    padding-bottom: 3rem;
+}
+.experiencia{
+    padding-top: 1 rem;
+}
+
+.login{
+    height: 80 vh;
+}
+.estructura_login{
+    margin-top: 15%;
+}
+.letra{
+    font-size: 1.5rem;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.vertical{
+    text-decoration: none;
+    background-color:black;
+    
+}
+nav.vertical{
+    float: left;
+    background-color: black;
+    margin-right: 0;
+}
+li.vertical{
+    display: block;
+    margin-right: 0;
+    padding:1 rem 0;
+    writing-mode: vertical;
+    display: flex;
+    background-color:black;
+}
+a, a:hover {
+    text-decoration:none;
+    color: rgb(219, 219, 233);
+}
